@@ -10,7 +10,7 @@ $(function () {
     //             console.log(backData);
     //         }
     //     })
-    // })dan
+    // })
 
     // 2.初始化 表单验证插件
     /*
