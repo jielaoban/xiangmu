@@ -1,4 +1,6 @@
 $(function () {
+    
+    // 首页独有的
     // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main_left'));
 
@@ -169,27 +171,6 @@ $(function () {
         };
         myChart2.setOption(option2);
     // 基于准备好的dom，初始化echarts实例
-    
 
-
-    // 找到header中的第一个a 点击 隐藏左边 变大 右边
-    $(".lt_main a.glyphicon-qrcode").first().click(function () {
-        $('.lt_aside').toggle();
-        $('.lt_main').toggleClass("fullScreen");
-    })
-
-    // 弹出确认modal
-    $(".lt_main a.glyphicon-log-out").click(function () {
-        // js 弹框
-        $('.modal-sure').modal('show');
-    })
-
-    // 关闭modal
-    $('.modal-sure button.btn-danger').click(function () {
-        // js 关框
-        $('.modal-sure').modal('hide');
-        // 去login
-        window.location.href ='./login.html';
-    })
 
 })
